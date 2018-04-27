@@ -22,6 +22,14 @@
   font-size: large;
 }
 
+.Video-container {
+  position:relative;
+  max-width: 640px;
+  padding-top:0px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }

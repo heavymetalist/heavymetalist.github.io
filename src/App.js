@@ -7,8 +7,7 @@ class App extends Component {
   render() {
     
     const opts = {
-      height: '390',
-      width: '640',
+      width: '100%',
       playerVars: { // https://developers.google.com/youtube/player_parameters
         autoplay: 1,
         list: 'PLa03iLiFF1Q2pkeMcktAlEQhD_F1q1Pkr',
@@ -25,16 +24,18 @@ class App extends Component {
         </header>
         <br/>
 
-        <YouTube
-        videoId="q3y3rirNy0E"
-        opts={opts}
-        onReady={this._onReady}
-        onPause={this._onPause}
-        onEnd={this._onEnd}
-        />
+        <div className="Video-container">
+          <YouTube
+          videoId="q3y3rirNy0E"
+          opts={opts}
+          onReady={this._onReady}
+          onEnd={this._onEnd}
+          />
+        </div>
         <p className="App-intro">
           Please select the song from video's top left corner.
         </p>
+        
       </div>
     );
   }
@@ -42,10 +43,6 @@ class App extends Component {
   _onReady(event) {
     // access to player in all event handlers via event.target
     event.target.playVideo();
-  }
-  _onPause(event) {
-    // access to player in all event handlers via event.target
-    event.target.pauseVideo();
   }
   _onEnd(event) {
     // access to player in all event handlers via event.target
