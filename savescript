@@ -9,5 +9,5 @@ git push origin source
 # npm install
 # git config user.email "you@gmail.com"
 # git config user.name "heavymetalist"
-# ./savescript
+# npm run deploy for pages and ./savescript for source
 
