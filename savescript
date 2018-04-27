@@ -5,6 +5,9 @@ git push origin source
 
 ## Notes:
 # git clone https://github.com/heavymetalist/heavymetalist.github.io --branch source
+# cd heavymetalist.github.io
+# npm install
 # git config user.email "you@gmail.com"
 # git config user.name "heavymetalist"
+# npm run deploy for pages and ./savescript for source
 
